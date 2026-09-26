@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+results.jsonl
+.devin/config.local.json
+apply_log*.json
+apply_log.tmp
+dist/

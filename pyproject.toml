@@ -1,0 +1,36 @@
+[project]
+name = "jevsort"
+version = "0.1.0"
+description = "Google Photos organizer driven by Jev decisions"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Olivia Yang" }, { name = "Stanley Zhu" }, { name = "Daniel Kao" }]
+keywords = ["google-photos", "photo-organizer", "clip", "playwright", "deduplication", "jev"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Graphics",
+]
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "imagehash>=4.3.2",
+    "numpy>=2.5.3",
+    "open-clip-torch>=3.3.0",
+    "pillow>=12.3.0",
+    "playwright>=1.63.0",
+    "python-dotenv>=1.2.3",
+    "rich>=15.0.0",
+    "torch>=2.14.0",
+]
+
+[project.scripts]
+jevsort = "jevsort.__main__:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
